@@ -5,10 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-        <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mystyle.css" />
+   
+    <script src="./js/pixi.min.js"></script>
   </head>
   <body>
-    <p>test</p>
-     <p>test1234</p>
+    <!-- <section class="test"></section> -->
+    <section>
+      <div id="gameDiv"></div>
+      <!-- <div class="gameDiv"></div> -->
+      <wrapper>
+        <div id="keys">Scoreboard: 0</div>
+        <!-- <div id="gife"><div id="face"></div></div> -->
+        <div id="gife"><div id="face" class="face"></div></div>
+        <button id="myBtn">restart</button>
+        <button id="playMusic">Play Music</button>
+      </wrapper>
+    </section>
+    <audio src="sounds/SpaceRiddle.mp3" id="space"></audio>
+    <audio src="sounds/death.wav" id="death"></audio>
+    <audio src="sounds/enemySpotted.wav" id="enemySpotted"></audio>
+    <audio src="sounds/underAttack.wav" id="underAttack"></audio>
+    <audio src="sounds/ekhem.wav" id="ekhem"></audio>
+    <audio src="sounds/haha.wav" id="haha"></audio>
+    <audio src="sounds/chadOst.mp3" id="chadOst"></audio>
+    <audio
+      src="sounds/underAttackDramatic.wav"
+      id="underAttackDramatic"
+    ></audio>
+   
+    <script type="module" src="demoBoom.js"></script>
   </body>
 </html>
+<!-- The Rehearsal -->
