@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "EightBit Atari-90";
+  src: url(fonts/EightBit\ Atari-90.ttf);
+}
+* {
+  margin: 0;
+}
+
+section {
+  display: flex;
+
+  height: 100vh;
+
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-evenly;
+  background-color: rgb(56, 56, 52);
+  /* background-color: rgb(186, 157, 29); */
+  width: 100%;
+
+  font-family: sans-serif;
+  /* color: white; */
+  font-size: 40px;
+}
+.face {
+  margin-top: 70px;
+  background-image: url(images/faceMain.png);
+  background-repeat: no-repeat;
+  animation: walk 2s infinite steps(3);
+  /* background-image: url(images/face.png); */
+  /* animation: walk 2s infinite steps(5); */
+  width: 103px;
+  height: 122px;
+  margin-left: 40px;
+  /* align-self: center; */
+}
+.faceAngry {
+  margin-top: 70px;
+  background-image: url(images/faceAngry.png);
+  animation: walk1 2s infinite steps(3);
+  background-repeat: no-repeat;
+  /* background-image: url(images/face.png); */
+  /* animation: walk 2s infinite steps(5); */
+  width: 103px;
+  height: 122px;
+  margin-left: 40px;
+  /* align-self: center; */
+}
+.dead {
+  margin-top: 70px;
+  background-image: url(images/dead.png);
+  /* background-image: url(images/face.png); */
+  /* animation: walk 2s infinite steps(5); */
+  width: 103px;
+  height: 122px;
+  margin-left: 40px;
+  /* align-self: center; */
+}
+#gife {
+  background-image: url(images/gif.gif);
+
+  background-size: cover;
+  width: 444px;
+  height: 322px;
+  align-self: center;
+}
+@keyframes walk1 {
+  100% {
+    background-position: -330px 0;
+  }
+}
+@keyframes walk {
+  100% {
+    background-position: -310px 0;
+  }
+}
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 24px solid rgb(72, 31, 31); */
+}
+
+#gameDiv {
+  /* background-color: darkcyan; */
+  /* width ma mniejszą ważność niż flex-basis, ale flex-basis zależy od kierunku (flex-direction), więc czasami jest szerokością (row) a czasami wysokością (column) */
+  width: 512px;
+  height: 512px;
+  /* border: 24px solid rgb(72, 31, 31); */
+  border: 24px solid rgb(59, 58, 58);
+  align-self: center;
+  /* overflow: hidden; */
+}
+wrapper {
+  /* background-color: rgb(160, 114, 142); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+}
+#keys {
+  /* background-color: darkred; */
+  font-family: "EightBit Atari-90";
+  font-size: 20px;
+  /* margin-left: 20px; */
+  /* align-self: center; */
+}
+
+button {
+  background-color: rgb(145, 125, 36);
+  font-family: "EightBit Atari-90";
+  border: 4px solid rgb(0, 0, 0);
+  width: 150px;
+  height: 50px;
+  align-self: center;
+}
