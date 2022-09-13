@@ -44,6 +44,8 @@ let id,
   healthBar,
   message,
   createEnemies;
+let w = 65;
+  let h = 65;
 let scoreboard = 0;
 let flag = false;
 let keys = {};
@@ -286,8 +288,7 @@ function createExplosion() {
 
 function createPlayerSheet() {
   let sshet = new PIXI.BaseTexture.from(app.loader.resources["spaceship"].url);
-  let w = 65;
-  let h = 65;
+  
   let numFrames = 12;
 
   playerSheet["standSouth"] = [
